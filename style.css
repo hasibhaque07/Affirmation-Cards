@@ -15,22 +15,29 @@
 p {
   line-height: 36px;
 }
+header {
+  text-align: center;
+  background-color: #ddc8fb;
+  padding-top: 20px;
+}
+header img {
+  width: 350px;
+  text-align: center;
+}
 .hero-section {
   text-align: center;
   background-color: #ddc8fb;
   color: #3c0785;
+  padding-top: 40px;
+  padding-bottom: 70px;
 }
-.logo-txt {
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-}
+
 .hero-heading {
   font-size: 70px;
   font-weight: bold;
-
+  padding-bottom: 30px;
   max-width: 1200px;
-  margin: 50px auto;
+  margin: 0 auto;
 }
 .hero-sub-heading {
   font-size: 30px;
@@ -103,11 +110,49 @@ p {
   color: white;
 }
 
+.blog-container {
+  max-width: 800px;
+  padding: 70px 20px;
+  margin: 0 auto;
+}
+.blog-hero-section {
+  background-color: #ddc8fb;
+  color: #3c0785;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+.blog-heading,
+.blog-p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.blog-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.blog-card {
+  max-width: 330px;
+  /* background: lightblue; */
+  border: 1px solid rgb(200, 198, 198);
+  padding: 15px;
+  margin: 10px;
+}
+.blog-card img {
+  max-width: 300px;
+}
+.blog-card a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.blog-card-p:hover {
+  color: #4450e7;
+}
+
 @media screen and (max-width: 1150px) {
-  .logo-txt {
-    margin-bottom: 30px;
-    font-size: 30px;
-  }
   .hero-heading {
     font-size: 50px;
   }
@@ -116,11 +161,19 @@ p {
   }
 }
 @media screen and (max-width: 770px) {
-  .logo-txt {
-    font-size: 24px;
+  header img {
+    width: 250px;
   }
   .container {
     text-align: left;
+  }
+  .blog-hero-section,
+  .hero-section {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  .hero-heading {
+    padding-bottom: 9px;
   }
   .section-style {
     padding-top: 30px;
